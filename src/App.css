@@ -1,38 +1,485 @@
-.App {
-  text-align: center;
+* {
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+    width: 110%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+    background-color: rgb(148, 148, 148);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* --------------NavBar-------------- */
+.Navbar {
+    background-color: black;
+    display: flex;
+    width: 100vw;
+    /* tenho que arrumar a responsividade dessa navbar*/
+}
+.Navbar a {
+    text-decoration: none;
+    width: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.Navbar li {
+    list-style: none;
+    color: rgb(255, 255, 255);
+    width: auto;
+    padding: 18px 30px;
+    text-align: center;
+    animation: fadeInLeft;
+    animation-duration: 2s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Navbar li:hover {
+    background-color: #483020;
+    transition: 1.0s;
+    border-radius: 10px;
+}
+
+/* --------------NavBar-------------- */
+/*  --------------Introdução--------------*/
+.Introducao {
+    display: inline-block;
+    position: relative;
+    width: 100vw;
+}
+
+.Introducao h1 {
+    width: auto;
+    font-size: 100px;
+    color: white;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    animation: fadeInLeft;
+    animation-duration: 1.5s;
+}
+
+.Introducao p {
+    font-size: 30px;
+    color: white;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top: 43%;
+    left: 10%;
+    max-width: 1100px;
+    animation: fadeInRight;
+    animation-duration: 1.5s;
+}
+
+/* --------------Imagem Fundo da Introdução-------------- */
+#imgfundo{
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.4);
+    width: 100vw;
+}
+
+/* --------------Imagem Fundo da Introdução-------------- */
+
+/*  --------------Introdução--------------*/
+/*  --------------Modelo-1--------------*/
+.Modelo-1 {
+    display: inline-block;
+    position: relative;
+}
+
+.Imagem-Fundo {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.3);
+    max-width: 100%;
+
+}
+
+.Modelo-1 h1 {
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    font-family: "Platypi", serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top: 25%;
+    left: 12%;
+}
+
+.Imagens-ilustrativas-1 {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    position: absolute;
+    top: 38%;
+    left: 12%;
+    border-radius: 50px;
+}
+
+.Modelo-1 p {
+    font-size: 30px;
+    color: white;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top: 40%;
+    left: 48%;
+    max-width: 700px;
+}
+
+/*  --------------Modelo-1--------------*/
+/*  --------------Modelo-2--------------*/
+.Modelo-2 {
+    display: inline-block;
+    position: relative;
+}
+
+.Imagem-Fundo {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.3);
+
+}
+
+.Modelo-2 h1 {
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    font-family: "Platypi", serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top: 25%;
+    left: 60%;
+}
+
+.Imagens-ilustrativas-2 {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    position: absolute;
+    top: 38%;
+    left: 60%;
+    border-radius: 50px;
+}
+
+.Modelo-2 p {
+    font-size: 30px;
+    color: white;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top: 39%;
+    left: 10%;
+    max-width: 800px;
+
+}
+
+/*  --------------Modelo-2--------------*/
+/*  --------------Footer-------------*/
+
+footer {
+    height: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px;
+}
+
+footer ul {
+    list-style: none;
+    display: inline-block;
+}
+
+footer li {
+    float: left;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+/*  --------------Botões-------------*/
+button {
+    border: 0px;
+    background-color: transparent;
+    width: 106px;
+    height: 105px;
+}
+
+.Botao-Instagram {
+    background-image: url('./img/Logo-Instagram-Preto.png');
+}
+
+.Botao-Facebook {
+    background-image: url('./img/Logo-Facebook-Preto.png');
+
+}
+
+.Botao-WhatsApp {
+    background-image: url('./img/Logo-WhatsApp-Preto.png');
+
+}
+
+.Botao-Linkedin {
+    background-image: url('./img/Logo-Linkedlin-Preto.png');
+}
+
+/*  --------------Botões-------------*/
+/*  --------------Botões horver-------------*/
+
+
+.Botao-Instagram:hover {
+    background-image: url('./img/Logo-Instagram-color.png');
+    transition: 0.5s;
+    filter: drop-shadow(0 4px 1px rgb(0, 0, 0));
+}
+
+.Botao-Facebook:hover {
+    background-image: url('./img/Logo-Facebook-Color.png');
+    transition: 0.5s;
+    filter: drop-shadow(0 4px 1px rgb(0, 0, 0));
+}
+
+.Botao-WhatsApp:hover {
+    background-image: url('./img/Logo-WhatsApp-Color.png');
+    transition: 0.5s;
+    filter: drop-shadow(0 4px 1px rgb(0, 0, 0));
+
+}
+
+.Botao-Linkedin:hover {
+    background-image: url('./img/Logo-Linkdlin-Color.png');
+    transition: 0.5s;
+    filter: drop-shadow(0 4px 1px rgb(0, 0, 0));
+
+}
+
+/*  --------------Botões horver-------------*/
+
+/*  --------------Footer-------------*/
+/*! -----------------------Media 1600px----------------------- */
+
+@media (max-width: 1600px) {
+    .Navbar{
+        
+    }
+
+    .Introducao h1 {
+        font-size: 95px;
+    }
+
+    .Introducao p {
+        font-size: 25px;
+        max-width: 1050px;
+    }
+}
+
+/*! -----------------------Media 1450px----------------------- */
+
+@media (max-width: 1450px) {
+    .Navbar{
+        
+    }
+
+    .Introducao h1 {
+        font-size: 90px;
+    }
+
+    .Introducao p {
+        font-size: 23px;
+        max-width: 950px;
+    }
+}
+
+/*! -----------------------Media 1300px----------------------- */
+@media (max-width: 1300px) {
+    .Navbar{
+        
+    }
+
+    .Introducao h1 {
+        font-size: 85px;
+    }
+
+    .Introducao p {
+        font-size: 21px;
+        max-width: 850px;
+    }
+}
+
+/*! -----------------------Media 1150px----------------------- */
+@media (max-width: 1150px) {
+    .Navbar{
+        
+    }
+
+    .Introducao h1 {
+        font-size: 75px;
+    }
+
+    .Introducao p {
+        font-size: 19px;
+        max-width: 750px;
+    }
+}
+
+/*! -----------------------Media 1000px----------------------- */
+@media (max-width: 1000px) {
+    .Navbar{
+        
+    }
+
+    .Introducao h1 {
+        font-size: 65px;
+    }
+
+    .Introducao p {
+        font-size: 17px;
+        max-width: 650px;
+    }
+}
+
+/*! -----------------------Media 850px----------------------- */
+@media (max-width: 850px) {
+    .Navbar{
+        width: 100vw;
+    }
+
+    .Introducao h1 {
+        font-size: 55px;
+    }
+
+    .Introducao p {
+        font-size: 15px;
+        max-width: 550px;
+    }
+}
+
+/*! -----------------------Media 700px----------------------- */
+@media (max-width: 700px) {
+    .Navbar{
+        
+    }
+
+    .Introducao h1 {
+        font-size: 45px;
+    }
+
+    .Introducao p {
+        font-size: 11px;
+        max-width: 450px;
+    }
+}
+
+/*! -----------------------Media 550px----------------------- */
+@media (max-width: 550px) {
+    .Navbar{
+        
+    }
+
+    .Introducao h1 {
+        font-size: 35px;
+    }
+
+    .Introducao p {
+        font-size: 9px;
+        max-width: 350px;
+    }
+}
+
+/*! -----------------------Media 450px----------------------- */
+@media (max-width: 450px) {
+    .Navbar{
+        width: 132%;
+        
+    }
+
+    .Introducao h1 {
+        font-size: 25px;
+    }
+
+    .Introducao p {
+        font-size: 7px;
+        max-width: 300px;
+    }
+}
+
+/*! -----------------------Media 400px----------------------- */
+@media (max-width: 400px) {
+    .Navbar{
+        width: 100%;
+        
+    }
+
+    .Introducao h1 {
+        font-size: 20px;
+    }
+
+    .Introducao p {
+        font-size: 7px;
+        max-width: 270px;
+    }
+    #imgfundo{
+        width: 475px;
+    }
+}
+
+/*! -----------------------Media 340px----------------------- */
+@media (max-width: 340px) {
+    .Navbar{
+        width: 132%;
+    }
+
+    .Introducao h1 {
+        font-size: 18px;
+    }
+
+    .Introducao p {
+        font-size: 6px;
+        max-width: 230px;
+    }
+}
+
+/*! -----------------------Media 280px----------------------- */
+@media (max-width: 280px) {
+    .Navbar{
+        width: 80%;
+        font-size: 5px;
+    }
+    .Navbar li{
+        padding: 10px 5px;
+    }
+
+    .Introducao h1 {
+        font-size: 15px;
+    }
+
+    .Introducao p {
+        font-size: 4px;
+        max-width: 190px;
+    }
 }
