@@ -23,6 +23,7 @@ body {
     width: 100vw;
     /* tenho que arrumar a responsividade dessa navbar*/
 }
+
 .Navbar a {
     text-decoration: none;
     width: auto;
@@ -56,6 +57,7 @@ body {
     width: auto;
     font-size: 100px;
     color: white;
+    filter: drop-shadow(0 4px 1px rgb(0, 0, 0));
     font-family: "Platypi", serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -83,10 +85,10 @@ body {
 }
 
 /* --------------Imagem Fundo da Introdução-------------- */
-#imgfundo{
+#imgfundo {
     background-size: cover;
     background-position: center;
-    filter: brightness(0.4);
+    filter: brightness(0.6);
     width: 100vw;
 }
 
@@ -222,6 +224,10 @@ footer p {
     color: white;
 }
 
+span {
+    color: #573d2c;
+}
+
 /*  --------------Botões-------------*/
 button {
     border: 0px;
@@ -284,9 +290,7 @@ button {
 /*! -----------------------Media 1600px----------------------- */
 
 @media (max-width: 1600px) {
-    .Navbar{
-        
-    }
+    .Navbar {}
 
     .Introducao h1 {
         font-size: 95px;
@@ -301,9 +305,7 @@ button {
 /*! -----------------------Media 1450px----------------------- */
 
 @media (max-width: 1450px) {
-    .Navbar{
-        
-    }
+    .Navbar {}
 
     .Introducao h1 {
         font-size: 90px;
@@ -317,9 +319,7 @@ button {
 
 /*! -----------------------Media 1300px----------------------- */
 @media (max-width: 1300px) {
-    .Navbar{
-        
-    }
+    .Navbar {}
 
     .Introducao h1 {
         font-size: 85px;
@@ -333,9 +333,7 @@ button {
 
 /*! -----------------------Media 1150px----------------------- */
 @media (max-width: 1150px) {
-    .Navbar{
-        
-    }
+    .Navbar {}
 
     .Introducao h1 {
         font-size: 75px;
@@ -349,9 +347,7 @@ button {
 
 /*! -----------------------Media 1000px----------------------- */
 @media (max-width: 1000px) {
-    .Navbar{
-        
-    }
+    .Navbar {}
 
     .Introducao h1 {
         font-size: 65px;
@@ -365,121 +361,176 @@ button {
 
 /*! -----------------------Media 850px----------------------- */
 @media (max-width: 850px) {
-    .Navbar{
+    .Navbar {
         width: 100vw;
     }
 
     .Introducao h1 {
-        font-size: 55px;
+        font-size: 65px;
+        left: 26%;
+        top: 8%;
+    }
+
+    .Introducao p {
+        font-size: 19px;
+        max-width: 650px;
+        text-align: center;
+        top: 38%;
+        left: 10%;
+    }
+}
+
+/*! -----------------------Media 750px----------------------- */
+@media (max-width: 750px) {
+    .Navbar {}
+
+    .Introducao h1 {
+        font-size: 60px;
+        left: 23%;
+        top: 8%;
+    }
+
+    .Introducao p {
+        font-size: 16px;
+        max-width: 550px;
+        top: 35%;
+        left: 11%;
+    }
+}
+
+/*! -----------------------Media 640px----------------------- */
+@media (max-width: 640px) {
+    .Navbar {}
+
+    .Introducao h1 {
+        font-size: 50px;
+        left: 27%;
+        top: 6%;
     }
 
     .Introducao p {
         font-size: 15px;
-        max-width: 550px;
+        max-width: 500px;
+        text-align: center;
+        top: 33%;
     }
 }
 
-/*! -----------------------Media 700px----------------------- */
-@media (max-width: 700px) {
-    .Navbar{
-        
+/*! -----------------------Media 590px----------------------- */
+@media (max-width: 590px) {
+    .Navbar {
+        width: 91%;
     }
 
     .Introducao h1 {
         font-size: 45px;
+        left: 27%;
+        top: 3%;
+    }
+
+    .Introducao p {
+        font-size: 14px;
+        max-width: 470px;
+        top: 30%;
+        left: 10%;
+    }
+}
+
+/*! -----------------------Media 540px----------------------- */
+@media (max-width: 540px) {
+    .Navbar {}
+
+    .Introducao h1 {
+        font-size: 42px;
+        left: 28%;
+    }
+
+    .Introducao p {
+        font-size: 12px;
+        max-width: 430px;
+    }
+}
+
+/*! -----------------------Media 500px----------------------- */
+@media (max-width: 500px) {
+    .Navbar {
+        width: 100%;
+    }
+
+    .Introducao h1 {
+        font-size: 40px;
     }
 
     .Introducao p {
         font-size: 11px;
-        max-width: 450px;
+        max-width: 400px;
     }
 }
 
-/*! -----------------------Media 550px----------------------- */
-@media (max-width: 550px) {
-    .Navbar{
-        
+/*! -----------------------Media 460px----------------------- */
+@media (max-width: 460px) {
+    .Navbar {}
+
+    .Introducao h1 {
+        font-size: 37px;
+        left: 26%;
     }
+
+    .Introducao p {
+        font-size: 11px;
+        max-width: 380px;
+        left: 8%;
+    }
+}
+
+/*! -----------------------Media 430px----------------------- */
+@media (max-width: 430px) {
+    .Navbar {}
 
     .Introducao h1 {
         font-size: 35px;
+        left: 28%;
     }
 
     .Introducao p {
-        font-size: 9px;
-        max-width: 350px;
+        font-size: 10px;
+        max-width: 340px;
+        left: 11%;
     }
 }
 
-/*! -----------------------Media 450px----------------------- */
-@media (max-width: 450px) {
-    .Navbar{
-        width: 132%;
-        
-    }
+/*! -----------------------Media 390px----------------------- */
+@media (max-width: 390px) {
+    .Navbar {}
 
     .Introducao h1 {
-        font-size: 25px;
+        font-size: 34px;
+        left: 25%;
     }
 
     .Introducao p {
-        font-size: 7px;
-        max-width: 300px;
+        font-size: 10px;
+        max-width: 330px;
+        left: 8%;
     }
 }
 
-/*! -----------------------Media 400px----------------------- */
-@media (max-width: 400px) {
-    .Navbar{
-        width: 100%;
-        
-    }
+/*! -----------------------Media 360px----------------------- */
+@media (max-width: 360px) {
+    .Navbar {}
 
     .Introducao h1 {
-        font-size: 20px;
+        font-size: 33px;
+        left: 28%;
     }
 
     .Introducao p {
-        font-size: 7px;
-        max-width: 270px;
-    }
-    #imgfundo{
-        width: 475px;
-    }
-}
-
-/*! -----------------------Media 340px----------------------- */
-@media (max-width: 340px) {
-    .Navbar{
-        width: 132%;
+        font-size: 10px;
+        max-width: 330px;
+        left: 9%;
     }
 
-    .Introducao h1 {
-        font-size: 18px;
-    }
-
-    .Introducao p {
-        font-size: 6px;
-        max-width: 230px;
-    }
-}
-
-/*! -----------------------Media 280px----------------------- */
-@media (max-width: 280px) {
-    .Navbar{
-        width: 80%;
-        font-size: 5px;
-    }
-    .Navbar li{
-        padding: 10px 5px;
-    }
-
-    .Introducao h1 {
-        font-size: 15px;
-    }
-
-    .Introducao p {
-        font-size: 4px;
-        max-width: 190px;
+    #imgfundo {
+        width: 110%;
     }
 }

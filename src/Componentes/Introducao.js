@@ -7,7 +7,7 @@ class Introducao extends Component {
         return(
             <div className='Introducao'>
                 <img src={FotoCapa} alt='Foto de Capa' title='Foto de Capa' id='imgfundo'/>
-                <h1>Coffee all day</h1>
+                <h1>Coffee <span>all day</span></h1>
                 <p>Bem-vindo ao Coffee All Day, o seu refúgio acolhedor para os amantes de café! Aqui, cada xícara é uma
                     experiência única, onde o aroma rico e os sabores intensos se combinam para criar momentos
                     inesquecíveis. Nossa paixão pelo café vai além de apenas servir uma bebida. Nós nos dedicamos a
