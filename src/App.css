@@ -51,11 +51,12 @@ body {
     display: inline-block;
     position: relative;
     width: 100vw;
+    background-image: url('../src/img/Foto-Capa.png');
 }
 
 .Introducao h1 {
     width: auto;
-    font-size: 100px;
+    font-size: 130px;
     color: white;
     filter: drop-shadow(0 4px 1px rgb(0, 0, 0));
     font-family: "Platypi", serif;
@@ -63,14 +64,14 @@ body {
     font-weight: 400;
     font-style: normal;
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 10%;
     animation: fadeInLeft;
     animation-duration: 1.5s;
 }
 
 .Introducao p {
-    font-size: 30px;
+    font-size: 34px;
     color: white;
     font-family: "Platypi", serif;
     font-optical-sizing: auto;
@@ -79,17 +80,19 @@ body {
     position: absolute;
     top: 43%;
     left: 10%;
-    max-width: 1100px;
+    max-width: 1250px;
     animation: fadeInRight;
     animation-duration: 1.5s;
 }
 
 /* --------------Imagem Fundo da Introdução-------------- */
-#imgfundo {
+.imgfundo {
+    background-image:url('./img/Foto-Capa.png') ;
     background-size: cover;
     background-position: center;
-    filter: brightness(0.6);
-    width: 100vw;
+    filter: brightness(0.4);
+    width: 100%;
+    height: 80vh;
 }
 
 /* --------------Imagem Fundo da Introdução-------------- */
@@ -293,13 +296,14 @@ button {
     .Navbar {}
 
     .Introducao h1 {
-        font-size: 95px;
+        font-size: 120px;
     }
 
     .Introducao p {
-        font-size: 25px;
-        max-width: 1050px;
+        font-size: 34px;
+        max-width: 1200px;
     }
+
 }
 
 /*! -----------------------Media 1450px----------------------- */
@@ -308,12 +312,15 @@ button {
     .Navbar {}
 
     .Introducao h1 {
-        font-size: 90px;
+        font-size: 105px;
     }
 
     .Introducao p {
-        font-size: 23px;
-        max-width: 950px;
+        max-width: 1100px;
+    }
+    .imgfundo {
+        background-image: url('./img/Foto-Capa-1450px.png');
+        filter: brightness(0.3);
     }
 }
 
@@ -322,12 +329,12 @@ button {
     .Navbar {}
 
     .Introducao h1 {
-        font-size: 85px;
+        font-size: 100px;
     }
 
     .Introducao p {
-        font-size: 21px;
-        max-width: 850px;
+        font-size: 32px;
+        max-width: 1000px;
     }
 }
 
@@ -336,47 +343,39 @@ button {
     .Navbar {}
 
     .Introducao h1 {
-        font-size: 75px;
+        font-size: 95px;
     }
 
     .Introducao p {
-        font-size: 19px;
-        max-width: 750px;
+        top: 38%;
+        font-size: 29px;
+        max-width: 800px;
+    }
+    .imgfundo {
+        background-image: url('./img/Foto-Capa-1150px.png');
     }
 }
 
-/*! -----------------------Media 1000px----------------------- */
-@media (max-width: 1000px) {
-    .Navbar {}
-
-    .Introducao h1 {
-        font-size: 65px;
-    }
-
-    .Introducao p {
-        font-size: 17px;
-        max-width: 650px;
-    }
-}
-
-/*! -----------------------Media 850px----------------------- */
-@media (max-width: 850px) {
+/*! -----------------------Media 940px----------------------- */
+@media (max-width: 940px) {
     .Navbar {
         width: 100vw;
     }
 
     .Introducao h1 {
-        font-size: 65px;
-        left: 26%;
-        top: 8%;
+        font-size: 90px;
+        left: 10%;
+        top: 17%;
     }
 
     .Introducao p {
-        font-size: 19px;
+        font-size: 27px;
         max-width: 650px;
-        text-align: center;
-        top: 38%;
+        top: 40%;
         left: 10%;
+    }
+    .imgfundo {
+        background-image: url('./img/Foto-Capa-940.png');
     }
 }
 
@@ -385,17 +384,14 @@ button {
     .Navbar {}
 
     .Introducao h1 {
-        font-size: 60px;
-        left: 23%;
-        top: 8%;
+        font-size: 85px;
     }
 
     .Introducao p {
-        font-size: 16px;
+        font-size: 25px;
         max-width: 550px;
-        top: 35%;
-        left: 11%;
     }
+
 }
 
 /*! -----------------------Media 640px----------------------- */
@@ -403,16 +399,16 @@ button {
     .Navbar {}
 
     .Introducao h1 {
-        font-size: 50px;
-        left: 27%;
-        top: 6%;
+        font-size: 80px;
     }
 
     .Introducao p {
-        font-size: 15px;
+        font-size: 25px;
         max-width: 500px;
-        text-align: center;
-        top: 33%;
+    }
+    .imgfundo {
+        background-image: url('./img/Foto-Capa-640px.png');
+        filter: brightness(0.3);
     }
 }
 
@@ -423,16 +419,11 @@ button {
     }
 
     .Introducao h1 {
-        font-size: 45px;
-        left: 27%;
-        top: 3%;
+        font-size: 75px;
     }
 
     .Introducao p {
-        font-size: 14px;
-        max-width: 470px;
-        top: 30%;
-        left: 10%;
+        max-width: 450px;
     }
 }
 
@@ -441,13 +432,12 @@ button {
     .Navbar {}
 
     .Introducao h1 {
-        font-size: 42px;
-        left: 28%;
+        font-size: 70px;
     }
 
     .Introducao p {
-        font-size: 12px;
-        max-width: 430px;
+        font-size: 23px;
+        max-width: 440px;
     }
 }
 
@@ -457,13 +447,8 @@ button {
         width: 100%;
     }
 
-    .Introducao h1 {
-        font-size: 40px;
-    }
-
     .Introducao p {
-        font-size: 11px;
-        max-width: 400px;
+        max-width: 390px;
     }
 }
 
@@ -472,14 +457,12 @@ button {
     .Navbar {}
 
     .Introducao h1 {
-        font-size: 37px;
-        left: 26%;
+        font-size: 65px;
     }
 
     .Introducao p {
-        font-size: 11px;
-        max-width: 380px;
-        left: 8%;
+        max-width: 370px;
+        top: 35%;
     }
 }
 
@@ -488,14 +471,16 @@ button {
     .Navbar {}
 
     .Introducao h1 {
-        font-size: 35px;
-        left: 28%;
+        left: 5%;
     }
 
     .Introducao p {
-        font-size: 10px;
-        max-width: 340px;
-        left: 11%;
+        font-size: 23px;
+        max-width: 350px;
+        left: 5%;
+    }
+    .imgfundo {
+        background-image: url('./img/Foto-Capa-430px.png');
     }
 }
 
@@ -504,14 +489,15 @@ button {
     .Navbar {}
 
     .Introducao h1 {
-        font-size: 34px;
-        left: 25%;
+        font-size: 55px;
     }
 
     .Introducao p {
-        font-size: 10px;
-        max-width: 330px;
-        left: 8%;
+        font-size: 22px;
+        max-width: 320px;
+    }
+    .imgfundo {
+        background-image: url('./img/Foto-Capa-390px.png');
     }
 }
 
@@ -519,18 +505,8 @@ button {
 @media (max-width: 360px) {
     .Navbar {}
 
-    .Introducao h1 {
-        font-size: 33px;
-        left: 28%;
-    }
-
     .Introducao p {
-        font-size: 10px;
-        max-width: 330px;
-        left: 9%;
-    }
-
-    #imgfundo {
-        width: 110%;
+        font-size: 20px;
+        max-width: 300px;
     }
 }
