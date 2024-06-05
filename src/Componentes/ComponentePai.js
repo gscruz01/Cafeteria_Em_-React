@@ -52,7 +52,7 @@ class ComponetePai extends Component {
             <div>
                 <Navbar/>
                 <Introducao/>
-                {/* <ModeloUm tituloDrinks = "|Café Espresso" imagem = {CafeEspresso} textoDrinks = "O café espresso é uma bebida forte e concentrada feita com uma pequena quantidade de café moído finamente e água quente sob pressão. Essa técnica extrai rapidamente os sabores do café, resultando em uma bebida encorpada e saborosa, conhecida por sua intensidade e crema. O café espresso é apreciado por sua intensidade e sabor concentrado." imagemFundo = {FundoCafeEspresso}/>
+                 <ModeloUm tituloDrinks = "|Café Espresso" imagem = {CafeEspresso} textoDrinks = "O café espresso é uma bebida forte e concentrada feita com uma pequena quantidade de café moído finamente e água quente sob pressão. Essa técnica extrai rapidamente os sabores do café, resultando em uma bebida encorpada e saborosa, conhecida por sua intensidade e crema. O café espresso é apreciado por sua intensidade e sabor concentrado." imagemFundo = {FundoCafeEspresso}/>
                 
                 <ModeloDois tituloDrinks = "|Flat White" imagem = {FlatWhite} textoDrinks = 'O Flat White é uma bebida única que combina a intensidade do espresso com a suavidade do leite vaporizado, resultando em uma experiência de sabor excepcionalmente equilibrada. No Coffee All Day,   preparamos o Flat White com maestria, usando café espresso de alta qualidade e leite fresco vaporizado para criar uma textura aveludada e um sabor suave e encorpado.' imagemFundo = {FundoFlatWhite}/>
 
@@ -78,7 +78,7 @@ class ComponetePai extends Component {
                 
                 <ModeloUm tituloDrinks = "|Frapê de Café" imagem = {FrapeDeCafe} textoDrinks = "Temos uma opção refrescante e deliciosa: O Frappé de Café. Esta bebida gelada é feita com café espresso, gelo, leite e açúcar, resultando em uma mistura cremosa e refrescante. O Frappé de Café é uma escolha popular para os dias quentes, pois combina a energia do café com a sensação refrescante do gelo." imagemFundo = {FundoFrapeDeCafe}/>
                 
-                <Footer/> */}
+                {/* <Footer/>  */}
             </div>
         );
     }
